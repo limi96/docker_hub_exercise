@@ -1,3 +1,11 @@
+name: Fly Deployment # Name of the workflow
+
+# On a push to the branch named master
+on:
+  push:
+    branches:
+      - master
+
   deploy:
     name: Fly.io CD/CI
     runs-on: ubuntu-latest
